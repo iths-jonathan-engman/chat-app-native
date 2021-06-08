@@ -16,7 +16,7 @@ class HomeScreen extends React.Component {
     await firebase.auth().signOut().then(() => {
       console.log('Logout')
       this.props.navigation.navigate('Signin')
-    })
+    });
 
   joinChat = () =>
     this.props.navigation.navigate('Chat', { name: this.state.name });

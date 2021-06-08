@@ -9,15 +9,14 @@ const SignupScreen = ({ navigation }) => {
   const [error, setError] = useState('');
 
   const signUp = async () => {
-
     await firebase.auth().createUserWithEmailAndPassword(email, password)
-    navigation.navigate('Signin')
     .then((userCredential) => {
-      var user = userCredential.user;
+      userCredential.user;
+      navigation.navigate('Signin')
     })
     .catch((error) => {
-      var errorCode = error.code;
-      var errorMessage = error.message;
+      error.code;
+      error.message;
     });
   }
 

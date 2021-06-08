@@ -16,7 +16,7 @@ const SigninScreen = ({ navigation }) => {
     } catch (err) {
       setError(err.message);
     }
-  }
+  };
 
   return (
     <View style={styles.container}>
@@ -25,7 +25,7 @@ const SigninScreen = ({ navigation }) => {
       </View>
 
       <View>
-        <Text style={{marginBottom: 35, fontSize: 20}}>Great to have you back!</Text>
+        <Text style={{marginBottom: 35, fontSize: 20}}>Just hop right in!</Text>
       </View>
 
       <View style={styles.form}>

@@ -3,7 +3,7 @@ import { View, StyleSheet, ImageBackground } from 'react-native';
 import { GiftedChat } from 'react-native-gifted-chat';
 import Fire from '../firebase/fireChat';
 
-const image = { uri: "https://cellularnews.com/wp-content/uploads/2020/03/black-lines-pattern-325x485.jpg" };
+const image = { uri: "https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105__480.png" };
 
 type Props = {
   name?: string,
