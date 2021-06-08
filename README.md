@@ -8,7 +8,7 @@
 - Anonymous authentication
 - Firestore database
 
-## Getting started
+### Getting started
 
 - Download project
 - cd to project folder
@@ -24,4 +24,4 @@ You can also connect your mobile device simultaneously, by:
 - Download Expo Go app on your mobile device
 - Scan the QR-code in CMD
 
-### Happy chatti'n!
+#### Happy chatti'n!

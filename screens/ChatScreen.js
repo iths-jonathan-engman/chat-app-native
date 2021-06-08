@@ -1,10 +1,9 @@
 import React from 'react';
 import { View, StyleSheet, ImageBackground } from 'react-native';
 import { GiftedChat } from 'react-native-gifted-chat';
-import firebase from '../firebase/fire';
 import Fire from '../firebase/fireChat';
 
-const image = { uri: "https://img.wallpapersafari.com/desktop/1920/1080/65/29/IsviCP.png" };
+const image = { uri: "https://cellularnews.com/wp-content/uploads/2020/03/black-lines-pattern-325x485.jpg" };
 
 type Props = {
   name?: string,
@@ -13,7 +12,11 @@ type Props = {
 class ChatScreen extends React.Component<Props> {
 
   static navigationOptions = ({ navigation }) => ({
-    title: navigation.getParam('name')
+    title: navigation.getParam('name'),
+    headerStyle: {
+      backgroundColor: '#cccccc',
+      height: 44,
+    }
   });
 
   state = {
@@ -31,13 +34,13 @@ class ChatScreen extends React.Component<Props> {
   render() {
     return (
       <View style={{ backgroundColor: "black", flex: 1}}>
-      <ImageBackground source={image} style={{ backgroundColor: "black", flex: 1}}>
-      <GiftedChat
-      messages={this.state.messages}
-      onSend={Fire.shared.send}
-      user={this.user}
-      />
-      </ImageBackground>
+        <ImageBackground source={image} style={{ backgroundColor: "black", flex: 1, opacity: 0.8}}>
+          <GiftedChat
+            messages={this.state.messages}
+            onSend={Fire.shared.send}
+            user={this.user}
+          />
+        </ImageBackground>
       </View>
     );
   }
@@ -57,12 +60,4 @@ class ChatScreen extends React.Component<Props> {
 export default ChatScreen;
 
 const styles = StyleSheet.create({
-  // container: {
-  //   flex: 1,
-  //   justifyContent: 'center',
-  //   alignItems: 'center'
-  // },
-  // button: {
-  //   width: 200
-  // }
 })
