@@ -11,7 +11,7 @@
 
 ### Getting started
 
-- download project
+- Download project
 - npm install --global expo-cli //Skip this step if you already have Expo installed
 - cd to project folder
 - npm install
@@ -19,7 +19,7 @@
 After the steps above is complete, start the server in web.
 
 - expo start
-- press "w" for web
+- Press "w" for web
 
 You can also connect your mobile device simultaneously, by:
 
