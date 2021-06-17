@@ -1,6 +1,6 @@
 # Welcome!
 
-## This is a React Native chat app, connected to Firebase.
+## This is a React Native Expo chat app, connected to Firebase.
 
 ### Whats included:
 
